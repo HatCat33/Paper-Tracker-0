@@ -21,7 +21,6 @@ search:
         - "vision language model"
         - "VLM"
         - "transformer"
-        - "mamba"
       logic: "AND"  # keywords内部OR，与sub_keywords之间AND
     - name: "点云+演化优化"
       keywords:
@@ -131,7 +130,7 @@ llm_summary:
 
 # --- 邮件推送 ---
 email:
-  enabled: false  # 默认关闭，需用户配置 SMTP
+  enabled: True  # 默认关闭，需用户配置 SMTP
   subject_prefix: "[arXiv Daily]"
   smtp_server: "smtp.qq.com"
   smtp_port: 465
