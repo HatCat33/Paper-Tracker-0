@@ -1,0 +1,1 @@
+import{_ as c,o,c as t,b as s}from"./index-DsOmNM6j.js";const a={},n={class:"logs-page"};function l(r,e){return o(),t("div",n,[...e[0]||(e[0]=[s("h1",null,"运行日志",-1),s("p",{class:"desc"},"GitHub Actions 运行历史",-1),s("div",{class:"placeholder"},[s("p",null,"在 GitHub 仓库的 Actions 标签页查看详细运行日志。")],-1)])])}const _=c(a,[["render",l],["__scopeId","data-v-54dc6a20"]]);export{_ as default};
