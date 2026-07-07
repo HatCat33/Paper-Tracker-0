@@ -1,0 +1,158 @@
+# ============================================================
+# Paper Tracker 配置文件
+# ============================================================
+
+# --- 检索设置 ---
+search:
+  # arXiv 学科分类，支持 cs.CV / cs.LG / cs.AI / cs.CL / cs.RO / cs.GR / stat.ML 等
+  categories:
+    - cs.CV
+    - cs.LG
+    - cs.AI
+  # 多关键词组，每组独立检索，结果合并去重
+  keyword_groups:
+    - name: "点云+大模型"
+      keywords:
+        - "point cloud"
+        - "3D point cloud"
+      sub_keywords:
+        - "large language model"
+        - "LLM"
+        - "vision language model"
+        - "VLM"
+        - "transformer"
+        - "mamba"
+      logic: "AND"  # keywords内部OR，与sub_keywords之间AND
+    - name: "点云+演化优化"
+      keywords:
+        - "point cloud"
+        - "3D point cloud"
+      sub_keywords:
+        - "evolutionary algorithm"
+        - "genetic algorithm"
+        - "particle swarm optimization"
+        - "neural architecture search"
+        - "optimization"
+        - "evolutionary computation"
+      logic: "AND"
+    - name: "点云分类分割配准"
+      keywords:
+        - "point cloud classification"
+        - "point cloud segmentation"
+        - "point cloud registration"
+        - "3D shape classification"
+        - "3D semantic segmentation"
+      sub_keywords: []
+      logic: "OR"
+  # 排除关键词（命中则过滤掉）
+  exclude_keywords:
+    - "medical image"
+    - "remote sensing"
+  # 每页抓取上限
+  max_results: 100
+  # 排序方式
+  sort_by: "lastUpdatedDate"  # submittedDate / lastUpdatedDate
+  sort_order: "descending"
+
+# --- 时间范围 ---
+freshness:
+  since_days: 3          # 检索近 N 天的论文
+  unique_only: true      # 跨天去重
+  state_path: ".state/seen.json"
+  fallback_when_empty: false  # 当天无新增时是否回退展示最近top N
+
+# --- 期刊/会议等级过滤（按 arXiv 期刊名/会议名匹配）---
+journal_filter:
+  enabled: true  # 总开关
+  levels:
+    top_conference:  # 顶会
+      - "CVPR"
+      - "ICCV"
+      - "ECCV"
+      - "NeurIPS"
+      - "ICML"
+      - "ICLR"
+      - "AAAI"
+      - "SIGGRAPH"
+      - "ACM MM"
+    top_journal:  # 顶刊
+      - "TPAMI"
+      - "IJCV"
+      - "TIP"
+      - "TOG"
+      - "TVCG"
+    q1_journal:  # 一区
+      - "PR"
+      - "CVIU"
+      - "TMM"
+      - "TCSVT"
+      - "CAD"
+      - "CG&A"
+    custom:  # 自定义
+      - []
+  # 用户选择的生效等级，留空表示仅用 custom
+  active_levels:
+    - "top_conference"
+    - "top_journal"
+    - "q1_journal"
+
+# --- 语义相似度过滤 ---
+semantic_filter:
+  enabled: false  # 默认关闭
+  model: "BAAI/bge-small-en-v1.5"  # embedding 模型
+  threshold: 0.5  # 相似度阈值（0~1，越高越严格）
+  batch_size: 32
+
+# --- 本地论文库推荐 ---
+local_recommend:
+  enabled: false  # 默认关闭，用户需手动启用
+  data_dir: "data"  # .bib 文件存放目录（支持 ScholarRead / Zotero 导出）
+  embedding_model: "BAAI/bge-small-en-v1.5"
+  top_k_neighbors: 5  # 每篇新论文匹配几篇本地论文
+  max_recommend: 10   # 最多推荐几篇
+  cache_dir: ".cache/recommender"
+  require_abstract: true  # 要求.bib条目必须含abstract
+
+# --- Semantic Scholar ---
+semantic_scholar:
+  enabled: false  # 默认关闭
+  include_citations: true  # 是否拉取引用量
+
+# --- LLM 双语摘要 ---
+llm_summary:
+  enabled: false  # 默认关闭，需用户配置 API key
+  provider: "deepseek"  # deepseek / siliconflow / openai
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-chat"
+  api_key_env: "LLM_API_KEY"  # 从环境变量读取
+  lang: "both"  # zh / en / both
+  scope: "tldr"  # tldr（简短）/ full（详细）/ both
+  max_tokens: 200
+
+# --- 邮件推送 ---
+email:
+  enabled: false  # 默认关闭，需用户配置 SMTP
+  subject_prefix: "[arXiv Daily]"
+  smtp_server: "smtp.qq.com"
+  smtp_port: 465
+  tls: "ssl"  # auto / ssl / starttls
+  use_env: true  # 从环境变量/GitHub Secrets 读取敏感信息
+  max_items: 15
+  include_pdf_links: true
+  include_score: true  # 是否显示推荐分数
+  detail: "full"  # simple / full
+
+# --- GitHub Pages 站点 ---
+site:
+  enabled: true
+  dir: "docs"
+  title: "Paper Tracker - arXiv 论文日报"
+  keep_runs: 30  # 保留最近 N 次运行的日报
+  theme: "light"  # light / dark / auto
+  accent: "#2563eb"
+
+# --- 运行设置 ---
+runtime:
+  output_dir: "outputs"
+  log_level: "INFO"
+  dry_run: false  # true 时不发邮件
