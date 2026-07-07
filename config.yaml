@@ -119,7 +119,7 @@ semantic_scholar:
 
 # --- LLM 双语摘要 ---
 llm_summary:
-  enabled: false  # 默认关闭，需用户配置 API key
+  enabled: True  # 默认关闭，需用户配置 API key
   provider: "deepseek"  # deepseek / siliconflow / openai
   base_url: "https://api.deepseek.com"
   model: "deepseek-chat"
