@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-14 - Paper Tracker - arXiv 论文日报</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --text: #212529;
+    --card-bg: #ffffff;
+    --border: #e9ecef;
+    --accent: #2563eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+  header {
+    text-align: center;
+    padding: 40px 16px 24px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+  }
+  header h1 { font-size: 22px; }
+  header p { opacity: 0.85; font-size: 13px; margin-top: 4px; }
+  .back-link {
+    display: inline-block;
+    margin: 16px 0;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .paper-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .paper-card h3 { font-size: 16px; margin-bottom: 6px; }
+  .paper-card h3 a { color: var(--text); text-decoration: none; }
+  .paper-card h3 a:hover { color: var(--accent); }
+  .paper-card .authors { color: #495057; font-size: 13px; margin-bottom: 6px; }
+  .paper-card .abstract { color: #6c757d; font-size: 13px; line-height: 1.6; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 2px;
+  }
+  footer { text-align: center; padding: 24px; color: #868e96; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>2026-07-14</h1>
+  <p>18 papers from arXiv</p>
+</header>
+<div class="container">
+  <a href="index.html" class="back-link">← Back to history</a>
+  <div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11588v1" target="_blank">FoundationGeo: Learning Spatial Pixel-Wise Fields for Monocular Metric Geometry</a></h3>
+  <p class="authors">Muxin Liu, Xiaoyang Lyu, Tianhe Ren, Peng Dai, Xiaoshan Wu et al.</p>
+  <p class="abstract">We present FoundationGeo, a two-stage framework that explicitly bridges relative and metric prediction via spatial calibration and principled data design. Stage 1 learns a high-fidelity, affine-invariant geometry model by initializing with DINOv3 and training on a curated 10.2M-sample multi-domain corpus with complementary local-detail supervision, yielding sharp boundaries and strong cross-domain...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11746v1" target="_blank">HiFi-LLP: High-Fidelity, Low-Cost Latency Predictors with Confidence for Robust HW-NAS</a></h3>
+  <p class="authors">Shambhavi Balamuthu Sampath, Behzad Shomali, Nael Fasfous, Moritz Thoma, Judeson Anthony Fernando et al.</p>
+  <p class="abstract">With deep neural networks (DNNs) increasingly deployed on edge devices, hardware (HW)-aware optimization techniques--such as HW-aware compression and HW-aware neural architecture search (HW-NAS)--have become essential. These methods rely on real feedback from the target hardware to tailor DNN architectures for efficient deployment. While the search can be parallelized, latency measurements via har...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AR</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11498v1" target="_blank">See like a Robot: Robot-Centric Pointmaps for Vision-Language-Action Models</a></h3>
+  <p class="authors">Byungkun Lee, Dongyoon Hwang, Dongjin Kim, Hojoon Lee, Minho Park et al.</p>
+  <p class="abstract">Vision-language-action (VLA) models predict robot actions from visual observations and language instructions. These actions are defined in the robot's own 3D coordinate frame, yet most VLAs observe the scene in the camera frame, creating a frame mismatch between where the scene is observed and where actions are defined. The mismatch is benign under a fixed viewpoint, where the policy can memorize ...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.RO</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11885v1" target="_blank">Latent-Identity Tuning in Text-to-Image Personalization Models</a></h3>
+  <p class="authors">Daniel Garibi, Ronen Kamenetsky, Hadar Averbuch-Elor, Daniel Cohen-Or, Or Patashnik</p>
+  <p class="abstract">Generating and editing a person's face demands high precision, as even minor modifications can significantly alter a subject's perceived identity. Current personalization and editing methods built on general-purpose text-to-image models, however, often lack the precision required for fine-grained facial edits. We present a method for fine-grained identity tuning in text-to-image personalization mo...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.GR</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11862v1" target="_blank">Evidence-Backed Video Question Answering</a></h3>
+  <p class="authors">Shijie Wang, Honglu Zhou, Ziyang Wang, Ran Xu, Caiming Xiong et al.</p>
+  <p class="abstract">Current Video Large Language Models (Video LLMs) excel in question answering (QA) but largely operate as black boxes, providing textual answers without verifiable visual grounding. Existing explainability efforts rely on textual rationales or sparse bounding boxes, which struggle to capture complex video dynamics such as occlusions and non-rigid deformations. We propose Evidence-Backed Video Quest...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11798v1" target="_blank">StoryTeller: Training-Free Narrative Grounding for Long-Form Audio Description</a></h3>
+  <p class="authors">Seung Hyun Hahm, Minh T. Dinh, SouYoung Jin</p>
+  <p class="abstract">Long-form audio description (AD) requires more than describing visible actions: it must preserve characters, events, relationships, and story context across scenes so that blind and low-vision (BLV) audiences can follow a film. Modern video-language models (VLMs) are effective on short clips, but they often treat each moment independently, producing descriptions that miss who characters are, why e...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11655v1" target="_blank">Feature-Space Guided Diffusion for Realistic Ultrasound Image Synthesis</a></h3>
+  <p class="authors">Marina Domínguez, Nélida Mirabet-Herranz, Valery Naranjo</p>
+  <p class="abstract">Conditional diffusion models can generate anatomically plausible medical ultrasound (US) images, but anatomical plausibility alone does not ensure realistic B-mode appearance. Most US pipelines adapt standard generative architectures and condition them on anatomical masks, or use guidance mechanisms that reinforce the same anatomical signal. However, B-mode US images are shaped by acquisition-depe...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11581v1" target="_blank">Actor as Its Own Critic: Unifying Region Understanding and Localization via CycleGRPO</a></h3>
+  <p class="authors">Xin Zhang, Haochen Wang, Yikang Zhou, Jason Li, Robby T. Tan</p>
+  <p class="abstract">This paper introduces Actor as Its Own Critic, a unified reinforcement learning framework, Cycle Group Relative Policy Optimization (CycleGRPO), that jointly optimizes region understanding and localization for Multimodal Large Language Models (MLLMs). Unlike existing separate pipelines, we leverage the inherent duality between the two tasks to construct a self-evaluating reinforcement learning par...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11541v1" target="_blank">Random Label Prediction Heads for Studying Memorization in Deep Neural Networks</a></h3>
+  <p class="authors">Marlon Becker, Jonas Konrad, Luis Garcia Rodriguez, Benjamin Risse</p>
+  <p class="abstract">We introduce a straightforward yet effective method to empirically study memorization in deep neural networks for classification tasks. Our approach augments each training sample with auxiliary random labels, which are then predicted by a random label prediction head (RLP-head). RLP-heads can be attached at arbitrary depths of a network, predicting random labels from the corresponding intermediate...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#fff3cd;color:#856404;">ICLR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11523v1" target="_blank">Vinci2: Providing Proactive Assistance in Continuous Egocentric Videos</a></h3>
+  <p class="authors">Gong Sitong, Tianyu Yan, Caixin Kang, Bo Zheng, Xiang Ruan et al.</p>
+  <p class="abstract">When should an intelligent assistant speak up without being asked? Continuous egocentric video offers rich, evolving context that enables a new form of assistance: one that is proactive rather than merely reactive. Yet existing approaches either wait passively for user queries or treat every detected event as requiring a response, without considering the user's history, current activity, or whethe...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11512v1" target="_blank">Toward Inclusive Avatar Design with Limb Differences Through Artificial Intelligence</a></h3>
+  <p class="authors">Fernanda Miyuki Yamada, João Paulo Gois, Hiroki Takahashi</p>
+  <p class="abstract">As extended reality becomes more popular for social interaction and entertainment, 3D avatars must represent the full diversity of body types. Most 3D avatar systems only support normative bodies and do not accurately depict people with limb differences, amputations, or other morphological variations. This paper reviews emerging technical approaches for inclusive 3D avatar customization for this g...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.HC</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.GR</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11434v1" target="_blank">Direct Image-to-Modern Vietnamese Translation of Han-Nom Manuscripts via Multimodal RLHF Preference Alignment</a></h3>
+  <p class="authors">Thi Kim Trang Vo, Nghia Hieu Nguyen, Ha Minh Tan</p>
+  <p class="abstract">Translating Han-Nom manuscripts into modern Vietnamese is challenging because historical pages are often degraded, the script contains rare logographic characters, and parallel supervision is limited. We propose a multimodal RLHF preference-alignment framework that conditions Vietnamese generation on manuscript images and aligned Han-Nom source text. The model combines four streams: CLIP ViT-L/14@...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CL</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11347v1" target="_blank">From Neural Network Decisions to Training Cases: An Exact Account via Case-Based Decision Theory</a></h3>
+  <p class="authors">Manli Yan, Yuebin Lin, Yaowen Yu, Yong Zhao</p>
+  <p class="abstract">Neural networks increasingly guide decisions in high-stakes domains such as medical diagnosis, credit approval, and energy bidding. Audit in these settings requires case-level evidence: which training cases support an action and what outcomes they carried. Case-based decision theory (CBDT) formalizes this reasoning by aggregating outcome support from remembered cases. We show that an OLS action re...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11341v1" target="_blank">The In-Car Sign Language Corpus (ICSL): A Multi-Modal Resource for Constrained-Space Sign Language Recognition</a></h3>
+  <p class="authors">Raviteja Boddu, Guilherme Vieira Leite, Joed Lopes da Silva, Ângelo Benetti, Isabela Barbieri et al.</p>
+  <p class="abstract">This paper addresses the challenges of using sign language within shared mobility services, such as taxis, carpools, or ride-sharing platforms. The use of sign language recognition (SLR) in real-world, confined environments, specifically vehicle interiors remains largely unexplored. To motivate research in this area, we present the In-Car Sign Language (ICSL) dataset for Brazilian Sign Language (L...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CL</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11314v1" target="_blank">Programming Language Policy as an AI Literacy Equity Problem: A 15-Nation Comparative Analysis</a></h3>
+  <p class="authors">Adrian-Marius Dumitran, Iulia-Maria Popescu</p>
+  <p class="abstract">The promise of AI literacy ``for all'' confronts a structural challenge embedded in how nations organise secondary computer science education. In most systems, a general-track subject -- Digital Literacy, ICT, TIC, or SNT -- bears the weight of universal AI literacy, while a specialist Informatics course serves STEM pathways separately. Yet the content and depth of the general track are shaped by ...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CY</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11199v1" target="_blank">DynEval: Holistic Evaluations of T2I Generative Models in the Wild</a></h3>
+  <p class="authors">Shyam Marjit, Dheeraj Baiju, Anuj Shikarkhane, Akhil Sakthieswaran, Sayak Paul et al.</p>
+  <p class="abstract">Recent advances in text-to-image (T2I) generation have led to models capable of producing highly realistic images. Yet, reliably evaluating their outputs remains challenging, especially at scale. Existing automatic evaluators, often relying on a static prompt set, struggle to capture subtle failure modes such as partial prompt misalignment, compositional errors, or visually plausible but semantica...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11197v1" target="_blank">What We Talk About When We Talk About LLM Planning: Evidence for Two Distinct Planning Abilities</a></h3>
+  <p class="authors">Sukai Huang, Chenyuan Zhang, Fucai Ke, Zhixi Cai, Naim Rastgoo et al.</p>
+  <p class="abstract">When LLMs exhibit uneven performance across planning tasks, these gaps are often attributed to task difficulty. We argue that this explanation is incomplete, as task-level variation may reflect distinct latent planning competencies rather than differences along a single ability spectrum. We study this question on ACPBench-Hard by evaluating multiple LLM families under varying test-time reasoning b...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.11173v1" target="_blank">When Depth Is Better Told Than Shown: Depth-Ordinal Prompting for Vision-Language Spatial Reasoning</a></h3>
+  <p class="authors">Quynh Vo, Phuc Dao, Cong-Duy Nguyen, Thong Nguyen</p>
+  <p class="abstract">Vision-language models (VLMs) are expected to reason about physical space -- which object is closer, what lies behind what, and how objects are arranged in 3D -- yet they still struggle with such spatial judgments. A natural remedy is to show the model a depth map, but we find that this can make performance worse. We show that depth is not absent: it reaches the language model, but becomes difficu...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+</div>
+<footer>Generated by Paper Tracker</footer>
+</body>
+</html>
