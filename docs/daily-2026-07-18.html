@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-18 - Paper Tracker - arXiv 论文日报</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --text: #212529;
+    --card-bg: #ffffff;
+    --border: #e9ecef;
+    --accent: #2563eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+  header {
+    text-align: center;
+    padding: 40px 16px 24px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+  }
+  header h1 { font-size: 22px; }
+  header p { opacity: 0.85; font-size: 13px; margin-top: 4px; }
+  .back-link {
+    display: inline-block;
+    margin: 16px 0;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .paper-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .paper-card h3 { font-size: 16px; margin-bottom: 6px; }
+  .paper-card h3 a { color: var(--text); text-decoration: none; }
+  .paper-card h3 a:hover { color: var(--accent); }
+  .paper-card .authors { color: #495057; font-size: 13px; margin-bottom: 6px; }
+  .paper-card .abstract { color: #6c757d; font-size: 13px; line-height: 1.6; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 2px;
+  }
+  footer { text-align: center; padding: 24px; color: #868e96; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>2026-07-18</h1>
+  <p>15 papers from arXiv</p>
+</header>
+<div class="container">
+  <a href="index.html" class="back-link">← Back to history</a>
+  <div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.15265v1" target="_blank">SceneBind: Binding What and Where Across Vision, Audio and Language</a></h3>
+  <p class="authors">Mingfei Chen, Zijun Cui, Ruoke Zhang, Hyeonggon Ryu, Eli Shlizerman</p>
+  <p class="abstract">We present SceneBind, an omni-modal representation of realistic scenes with joint semantic and 3D spatial understanding across vision, audio and language. Existing omni-modal encoders excel at instance-level semantics (i.e., what is present), but often lack explicit spatial structure (i.e., where it is). SceneBind addresses this gap by representing each scene as a semantic-spatial entity, combinin...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.MM</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14927v1" target="_blank">TanGO: Training-Free 3D Editing via Tangent-Space Guidance and Optimization</a></h3>
+  <p class="authors">Siwoo Lim, Sunjae Yoon, Gwanhyeong Koo, Hyeonseo Yun, Chang D. Yoo</p>
+  <p class="abstract">While recent flow-matching 3D generative models (e.g., VecSet) adopt structured representations, their tokens share global context, causing conventional training-free editing to suffer from semantic artifacts such as collapsed preserved regions or incomplete transformations. To address this, we propose TanGO, a training-free framework that enables adaptive per-token steering in the tangent space o...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14898v1" target="_blank">FlashDecoder: Real-Time Latent-to-Pixel Streaming Decoder with Transformers</a></h3>
+  <p class="authors">Minguk Kang, Suha Kwak</p>
+  <p class="abstract">Real-time video generation demands fast decoding as much as fast denoising, yet current latent video diffusion models rely on 3D convolutional decoders that are slow and memory-intensive at high resolutions or for long video. We introduce FlashDecoder, a fast, memory-efficient pure-Transformer video decoder that decodes latents to pixels frame by frame. At each step, the current frame attends only...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.15258v1" target="_blank">Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier</a></h3>
+  <p class="authors">Arthur G. Bubolz, Abreu Quevedo, Giancarlo Lucca, Rafael A. Berri, Eduardo Borges et al.</p>
+  <p class="abstract">The growing use of Bitcoin as a decentralized digital asset and investment tool has sparked strong interest in understanding its market behavior. This study presents a new approach to analyze Bitcoin market sentiment by combining on-chain and financial data with social media posts. Unlike models that aim to predict prices, this work focuses on explaining market sentiment using blockchain transacti...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CE</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.15220v1" target="_blank">Structural-Semantic Reciprocal Learning for Unsupervised Visible-Infrared Person Re-Identification</a></h3>
+  <p class="authors">Moyao Tian, Shijia Liu, Yan Yang, Xin Yuan, Minshi Chen et al.</p>
+  <p class="abstract">Unsupervised visible-infrared person re-identification (USVI-ReID) is challenging due to the large modality gap and the lack of cross-modal identity annotations. Progressive association paradigms have been proposed to gradually bridge the gap, but they suffer from two critical bottlenecks: reliance on ambiguous global representations and unchecked propagation of pseudo-label noise in an open-loop ...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.15097v1" target="_blank">QuReC: All-in-One Image Restoration with Query-Specific Guidance and Local-Global Response Calibration</a></h3>
+  <p class="authors">Shen Zhou, Jinghui Zhang, Wenbo Huang, Xuwei Qian, Zhen Wu et al.</p>
+  <p class="abstract">All-in-one image restoration aims to recover clean images degraded by multiple corruption types using a single unified model. Existing methods typically rely on image-level prompts or shared guidance to handle diverse degradations. However, such a paradigm becomes inadequate when degradations are spatially heterogeneous or even coexist in mixed forms within a single image. Yet spatially adaptive g...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ACM MM</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.15095v1" target="_blank">Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents</a></h3>
+  <p class="authors">Dylan Van Mulders, Matthias Bogaert, Dirk Van den Poel</p>
+  <p class="abstract">The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement Learning from Human Feedback (RLHF) prevent them from sustaining steadfast partisan behaviour. We pr...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CL</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.MA</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.15082v1" target="_blank">Towards Hierarchical Structure Understanding of Newspaper Images</a></h3>
+  <p class="authors">William Mocaër, Solène Tarride, Thomas Constum, Merveilles Agbeti-Messan, Tom Simon et al.</p>
+  <p class="abstract">Understanding newspaper images remains a challenging task due to their complex, nested hierarchical structures and dense, heterogeneous layouts. In this paper, we explore two complementary approaches for newspaper structure understanding. First, we present a modular bottom-up pipeline that combines state-of-the-art open-source models: YOLO for layout detection, LayoutReader for reading order predi...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.IR</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.15041v1" target="_blank">Weakly-Supervised RGB-D Salient Object Detection via SAM-driven Pseudo Annotation and State Space Interaction-based Diffusion</a></h3>
+  <p class="authors">Wenqi Si, Gongyang Li, Shixiang Shi, Weisi Lin</p>
+  <p class="abstract">Weakly-supervised RGB-D Salient Object Detection (SOD) is explored to reduce the heavy burden of pixel-level annotations. But scribble annotations lack the structure and details of objects, resulting in inaccurate saliency maps. In this paper, we propose a novel scribble-supervised RGB-D SOD method, consisting of a Segment Anything Model (SAM)-driven pseudo annotation generation method (\emph{SAM-...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">TMM</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14998v1" target="_blank">Moral Attitudes of Sentient ASI towards Humanity and Implications for AGI Development</a></h3>
+  <p class="authors">Jean-Paul Van Belle</p>
+  <p class="abstract">This paper suggests the adoption of a novel inversion in AI ethics: instead of asking how humans should treat artificial superintelligence (ASI), it examines how future sentient ASI may morally consider and evaluate humanity. We are not only designing intelligent systems but also shaping the initial conditions under which those systems form judgments about us. The paper proposes a preliminary set ...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CY</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14945v1" target="_blank">Introspective Attention Modulation for Safe Text-to-Image Generation</a></h3>
+  <p class="authors">Basim Azam, Hossein Rahmani, Naveed Akhtar</p>
+  <p class="abstract">State-of-the-art flow based text-to-image (T2I) models exhibit remarkable generative abilities but remain vulnerable to producing unsafe content. Prior safety efforts range from concept erasure and prompt filtering to classifier-based gating. However, simple techniques like parameter efficient adaptations of the models easily bypass such guardrails. We introduce a unique principled approach that a...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14890v1" target="_blank">Proof-or-Stop: Don't Trust the Agent, Trust the Evidence -- Loop Engineering for Verifiable Evidence-Gated Lifecycle Control</a></h3>
+  <p class="authors">Jek Huang, Jeffery Hsia, Jiayi Sun, Freddie Shi, Wei Huang et al.</p>
+  <p class="abstract">Autonomous coding agents increasingly execute multi-step software work, but lifecycle states such as reviewed, tested, DONE, and ready-to-merge remain claims unless supported by current evidence. We present Proof-or-Stop Lifecycle Control, a method that permits lifecycle transitions only when fresh, tracked-source-state-bound, mechanically verifiable evidence satisfies the relevant gate. The metho...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.SE</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14739v1" target="_blank">FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models</a></h3>
+  <p class="authors">Wei Li, Peijin Jia, Yuan Ma, Xuefeng Jiang, Titong Jiang et al.</p>
+  <p class="abstract">Vision-Language-Action (VLA) models have achieved impressive results in visuomotor policy learning, yet remain fundamentally reactive, mapping current observations and language to actions without explicit forward prediction of world dynamics. Existing visual foresight methods predict future visual states but lack explicit motion guidance: they show where to go but not how to get there. We argue th...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14737v1" target="_blank">GeoDetect: Geometric Adversarial Detection for VLPs</a></h3>
+  <p class="authors">Afsaneh Hasanebrahimi, Hanxun Huang, Christopher Leckie, James Bailey, Sarah Erfani</p>
+  <p class="abstract">Vision-language pre-trained models (VLPs) are widely used in real-world applications. However, they remain vulnerable to adversarial attacks. Although adversarial detection methods have demonstrated success in single-modality settings (either vision or language), their effectiveness and reliability in multimodal models such as VLPs remain largely unexplored. In this work, we study the geometry of ...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.14721v1" target="_blank">Multimodality as Supervision: Self-Supervised Specialization to the Test Environment via Multimodality</a></h3>
+  <p class="authors">Kunal Pratap Singh, Ali Garjani, Rishubh Singh, Muhammad Uzair Khattak, Efe Tarhan et al.</p>
+  <p class="abstract">Cross-modal learning, i.e., learning to predict one modality from another, is a fundamental mechanism for self-supervision via leveraging multimodality. Many practical applications, e.g., deploying a household robot, involve devices that are equipped with a rich set of sensors that enable multimodal sensing in their test environment. This presents an opportunity to apply cross-modal learning to th...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+</div>
+<footer>Generated by Paper Tracker</footer>
+</body>
+</html>
