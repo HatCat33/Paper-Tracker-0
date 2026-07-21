@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-21 - Paper Tracker - arXiv 论文日报</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --text: #212529;
+    --card-bg: #ffffff;
+    --border: #e9ecef;
+    --accent: #2563eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+  header {
+    text-align: center;
+    padding: 40px 16px 24px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+  }
+  header h1 { font-size: 22px; }
+  header p { opacity: 0.85; font-size: 13px; margin-top: 4px; }
+  .back-link {
+    display: inline-block;
+    margin: 16px 0;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .paper-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .paper-card h3 { font-size: 16px; margin-bottom: 6px; }
+  .paper-card h3 a { color: var(--text); text-decoration: none; }
+  .paper-card h3 a:hover { color: var(--accent); }
+  .paper-card .authors { color: #495057; font-size: 13px; margin-bottom: 6px; }
+  .paper-card .abstract { color: #6c757d; font-size: 13px; line-height: 1.6; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 2px;
+  }
+  footer { text-align: center; padding: 24px; color: #868e96; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>2026-07-21</h1>
+  <p>10 papers from arXiv</p>
+</header>
+<div class="container">
+  <a href="index.html" class="back-link">← Back to history</a>
+  <div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18149v1" target="_blank">Differentiable Logic Gate Networks for Low-Latency EEG Classification on Edge Devices</a></h3>
+  <p class="authors">Shyamal Y. Dharia, Stephen D. Smith, Camilo E. Valderrama</p>
+  <p class="abstract">Real-time EEG classification on edge devices is bottlenecked by the floating-point arithmetic of conventional neural networks. We investigated Differentiable Logic Gate Networks (Diff-Logic) as a hardware-native alternative that compiles models into pure Boolean circuits executable via bitwise CPU operations. Through rigorous iso-parameter experiments across four EEG datasets spanning two classifi...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18043v1" target="_blank">Adaptive Mamba Neural Operators</a></h3>
+  <p class="authors">Zeyuan Song, Zheyu Jiang</p>
+  <p class="abstract">Accurately solving partial differential equations (PDEs) on arbitrary geometries and a variety of meshes is an important task in science and engineering applications. In this paper, we propose Adaptive Mamba Neural Operators (AMO), which integrates reproducing kernels for state-space models (SSMs) rather than the kernel integral formulation of SSMs. This is achieved by constructing Takenaka-Malmqu...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">math.AP</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">math.NA</span><span class="badge" style="background:#fff3cd;color:#856404;">ICLR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.17965v1" target="_blank">Exploration Matters for Escaping the Blur Trap in 3D Gaussian Splatting</a></h3>
+  <p class="authors">Chengbo Wang, Guozheng Ma, Jinhong Wu, Tie Ji, Yizhen Lao</p>
+  <p class="abstract">3D Gaussian Splatting (3DGS) employs Gaussian primitives for explicit scene representation, facilitating real-time, high-fidelity reconstruction and novel view synthesis of complex scenes. However, the explicit modeling inherent in 3DGS introduces a gradient bias during optimization, rendering its non-convex optimization process highly susceptible to convergence toward local suboptimal solutions. ...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18237v1" target="_blank">The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric</a></h3>
+  <p class="authors">Sheng-Yu Wang, Yotam Nitzan, Aaron Hertzmann, Jun-Yan Zhu, Eli Shechtman et al.</p>
+  <p class="abstract">Human visual similarity judgments are context-dependent. For example, two images may be similar in shape but distinct in color. Existing perceptual similarity metrics, however, collapse these nuances into a single scalar value, offering no mechanism to condition on specific aspects. To bridge this gap, we introduce a large-scale dataset of human similarity judgments over image triplets, where each...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18227v1" target="_blank">FlowMimic: Mask-free Visual Editing and Generation with Pixel-pair Warped Flow Field for Online Video Editing Data Generation and Modality Mimicry</a></h3>
+  <p class="authors">Dingyun Zhang, Lixue Gong, Wei Liu</p>
+  <p class="abstract">In line with the prevailing direction of vision research, we explore the integration of both generation and editing capabilities for video and image modalities within a single model. Current approaches to collecting video editing data typically depend on labour-intensive, time-consuming curated procedures--involving object mask annotation, the use of error-introducing pair synthesis via I2V model ...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18101v1" target="_blank">Empowering On-Device Model Adaptation with an Edge AI Inference Accelerator</a></h3>
+  <p class="authors">Mateusz Piechocki, Alessandro Capotondi, Marek Kraft</p>
+  <p class="abstract">On-device model adaptation is essential to enable lifelong personalization on resource-constrained hardware, but compute, power, and memory limitations of such devices make end-to-end backpropagation impractical for modern deep neural networks. This work proposes a heterogeneous adaptation pipeline that repurposes a commercial edge AI inference accelerator, Hailo-8L, for frozen-backbone feature ex...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AR</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18026v1" target="_blank">Rethinking Heterogeneous LLM Merging: A Weighted Model Averaging Perspective</a></h3>
+  <p class="authors">Jiahe Fan, Yinghao Hou, Si Chen, Aiyuan Zhang, Hong Xie et al.</p>
+  <p class="abstract">Can large language models with substantially different parameter spaces be merged by direct weighted averaging, without training or semantic alignment? Existing heterogeneous fusion methods typically introduce distillation, adapters, learned latent spaces, routing, or feature alignment, leaving open whether a simpler recipe can work for genuinely different billion-parameter checkpoints. We revisit...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.17857v1" target="_blank">Leveraging Dissimilarity Invariance as a Robust Anchor for Learning with Noisy Labels</a></h3>
+  <p class="authors">Wenxiao Fan, Kan Li</p>
+  <p class="abstract">Deep learning models excel in visual recognition but suffer severe performance drops when training labels are corrupted by noise. Under label noise prior work cannot learn accurate similarities and thus misguide the learning process. In this paper, we uncover a complementary and novel phenomenon, Dissimilarity Invariance, whereby semantic dissimilarity between unrelated samples remains stable desp...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">AAAI</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.17842v1" target="_blank">CaT-GS: Efficient 3DGS Rendering for Large Scale Scenes via Inter-frame Caching and Tile Scheduling</a></h3>
+  <p class="authors">Tingjia Zhang, Bo Chen, Shengzhong Liu, Fan Wu, Guihai Chen</p>
+  <p class="abstract">Recent breakthroughs in 3D Gaussian Splatting (3DGS) have advanced neural rendering with high fidelity and speed. However, its performance degrades significantly in large-scale scenes due to the computational burden of tile-based rasterization. Existing optimization efforts either require costly scene re-training or focus on narrow aspects of the pipeline, overlooking critical inefficiencies in re...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.17778v1" target="_blank">CDIS: Cross-Dimensional Class-Agnostic 3D Instance Segmentation via 2D Mask Tracking and 3D-2D Projection Merging</a></h3>
+  <p class="authors">Juno Kim, Hye-Jung Yoon, Yesol Park, Byoung-Tak Zhang</p>
+  <p class="abstract">Class-agnostic 3D instance segmentation is critical for robotic systems operating in unknown environments, enabling perception of previously unseen objects for reliable manipulation and navigation. Existing approaches typically project per-frame 2D instance masks into 3D and merge them, which often breaks object identities across time and yields fragmented 3D instances. We introduce Cross-Dimensio...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+</div>
+<footer>Generated by Paper Tracker</footer>
+</body>
+</html>
