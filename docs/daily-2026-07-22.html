@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-22 - Paper Tracker - arXiv 论文日报</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --text: #212529;
+    --card-bg: #ffffff;
+    --border: #e9ecef;
+    --accent: #2563eb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+  header {
+    text-align: center;
+    padding: 40px 16px 24px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+  }
+  header h1 { font-size: 22px; }
+  header p { opacity: 0.85; font-size: 13px; margin-top: 4px; }
+  .back-link {
+    display: inline-block;
+    margin: 16px 0;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .paper-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .paper-card h3 { font-size: 16px; margin-bottom: 6px; }
+  .paper-card h3 a { color: var(--text); text-decoration: none; }
+  .paper-card h3 a:hover { color: var(--accent); }
+  .paper-card .authors { color: #495057; font-size: 13px; margin-bottom: 6px; }
+  .paper-card .abstract { color: #6c757d; font-size: 13px; line-height: 1.6; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 2px;
+  }
+  footer { text-align: center; padding: 24px; color: #868e96; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>2026-07-22</h1>
+  <p>9 papers from arXiv</p>
+</header>
+<div class="container">
+  <a href="index.html" class="back-link">← Back to history</a>
+  <div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.19228v1" target="_blank">IGGT4D: Streaming 4D Instance-Grounded Geometry Transformer</a></h3>
+  <p class="authors">Zhengyu Zou, Hao Li, Kuixuan Jiao, Liu Liu, Tingyang Xiao et al.</p>
+  <p class="abstract">Real-world spatial intelligence requires agents to understand scenes from continuous video streams, where objects move, persist, disappear, and reappear over time. While recent spatial foundation models have enabled generalizable feed-forward 3D reconstruction, most streaming methods remain geometry-centric and lack temporally consistent object-level understanding. Meanwhile, existing semantic rec...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.19210v1" target="_blank">Anatomy-Aware 3D Mesh Refinement of Pericardium Segmentations on Computed Tomography</a></h3>
+  <p class="authors">Andreas W. Aspe, Jonas Jalili Loft, Michael Huy Cuong Pham, Andreas Ohrt Johansen, Jørgen Tobias Kühl et al.</p>
+  <p class="abstract">Accurate delineation of the pericardium in a cardiac CT scan is essential for quantifying epicardial adipose tissue, yet it remains one of the most challenging structures to segment due to its poor contrast boundaries. Instead of solely relying on image gradients, our framework leverages the anatomical context of surrounding anatomical structures to guide the segmentation. This work introduces a n...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.19171v1" target="_blank">Point Ladder Tuning: Parameter-Efficient Hierarchical Adaptation for 3D Point Cloud Understanding</a></h3>
+  <p class="authors">Junlin Chang, Longhao Zou, Rui Li</p>
+  <p class="abstract">Fine-tuning pre-trained point-cloud backbones typically updates all parameters, resulting in substantial computation and memory overhead. More importantly, modern point backbones rely on aggressive tokenization and downsampling, which yields compact global tokens but irreversibly discards fine-grained local geometry, an inherent bottleneck for parameter-efficient adaptation. Consequently, existing...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.19100v1" target="_blank">FlexiAvatar: Unified 3D Gaussian Human Avatars Under Arbitrary Body Visibility</a></h3>
+  <p class="authors">Yihalem Yimolal Tiruneh, Muhammad Salman Ali, Uyoung Jeong, Muneeb A. Khan, MD Khalequzzaman Chowdhury Sayem et al.</p>
+  <p class="abstract">Reconstructing animatable 3D human avatars from monocular video is a fundamental problem in computer vision with broad applications in AR/VR and digital content creation. Existing approaches typically couple parametric body models with neural rendering or 3D Gaussian splatting and optimize all body regions jointly from short videos, which often degrades fidelity in the visible areas. To overcome t...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.19036v1" target="_blank">CoGoal3D: Collaborative 3D Object Detection with 3D-Aware Fusion and Refinement</a></h3>
+  <p class="authors">Zhihao Yang, Zhiyu Xiang, Peng Xu, Tianyu Pu, Kai Wang et al.</p>
+  <p class="abstract">V2X collaborative object detection features overcoming the limitations of single-vehicle systems by aggregating environmental features from multiple collaborative agents. However, existing mainstream V2X perception methods mainly focus on 2D BEV object detection. When 3D detection task is concerned, inferior results are obtained because they ignore the 3D spatial misalignment caused by differing h...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18975v1" target="_blank">Mi-Memory: A Lifecycle Memory Framework for Personal AI</a></h3>
+  <p class="authors">Xule Liu, Hanlin Teng, Chao Li, Yanan Ni, Shuo Lu et al.</p>
+  <p class="abstract">Personal AI is moving beyond chat-only interaction toward continuous services that span phones, cars, homes, wearables, cameras, and tools. In this setting, memory cannot remain a cache of prior conversations. It should serve as a continuity and governance substrate: preserving durable user state, grounding answers in multimodal and device evidence, supporting correction and forgetting, bounding p...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18927v1" target="_blank">OntoBook: Ontology-Grounded Synthetic Textbooks for Medical Encoder Pretraining</a></h3>
+  <p class="authors">Rian Touchent, Éric de la Clergerie</p>
+  <p class="abstract">We present OntoBook, a method that converts medical ontology structure into pretraining signal for encoder language models. Our approach has three stages: random walks through ontology graphs capture hierarchical and causal relations between medical codes, a large language model reformulates these walks into fluent textbook-style prose, and the resulting text is used to train ModernCamemBERT, a 14...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.AI</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18923v1" target="_blank">Visual Semantic Decoding of Electrocorticography from Video Stimuli using End-to-End Deep Learning</a></h3>
+  <p class="authors">Stella Ho, Joel Villalobos, Joseph West, Jingyang Liu, Weijie Qi et al.</p>
+  <p class="abstract">ECoG-based visual semantic decoding enables inference of semantic interpretation of visual perception from complex, noisy brain activity. This study examines the feasibility of visual semantic decoding using an end-to-end deep learning framework using electrocorticography (ECoG). Specifically, the decoding task is to predict visual categories from video stimuli using time-series neural inputs. A p...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.LG</span><span class="badge" style="background:#e8f4f8;color:#0c6787;">q-bio.NC</span><span class="badge" style="background:#fff3cd;color:#856404;">PR</span></div>
+</div>
+<div class="paper-card">
+  <h3><a href="http://arxiv.org/abs/2607.18863v1" target="_blank">Reliability-Aware 3D Geometric Injection for Universal Person Re-identification</a></h3>
+  <p class="authors">Bohan Su, Jiashuo Wang, Fangyi Liu, Mang Ye</p>
+  <p class="abstract">Universal person re-identification (ReID) aims to retrieve pedestrian identities across diverse real-world scenarios, including severe occlusions, clothing changes, and cross-modality shifts, within a unified model. However, existing 2D representations fundamentally struggle with spatial ambiguities due to a lack of depth and topological awareness, while naively introducing monocular 3D priors oft...</p>
+  <div style="margin-top:8px;"><span class="badge" style="background:#e8f4f8;color:#0c6787;">cs.CV</span><span class="badge" style="background:#fff3cd;color:#856404;">ECCV</span></div>
+</div>
+</div>
+<footer>Generated by Paper Tracker</footer>
+</body>
+</html>
